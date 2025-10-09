@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern E-commerce Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">BuyMore</div>
+          <div class="stats-card">
+            <div class="stats-number">37</div>
+            <div class="stats-label">Orders • Last 7 days</div>
+          </div>
+        </div>
+
+        <div class="sidebar-content">
+          <button class="explore-button">
+            <i class="fas fa-compass"></i> Explore New
+          </button>
+
+          <div class="nav-group">
+            <a href="#" class="nav-item active">
+              <i class="fas fa-fire"></i>
+              Popular Products
+            </a>
+            <a href="#" class="nav-item">
+              <i class="fas fa-tshirt"></i>
+              Clothing & Shoes
+            </a>
+            <a href="#" class="nav-item">
+              <i class="fas fa-gift"></i>
+              Gifts & Living
+            </a>
+            <a href="#" class="nav-item">
+              <i class="fas fa-lightbulb"></i>
+              Inspiration
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="recent-orders">
+            <h4>Recent Orders</h4>
+            <div class="order-item">
+              <div class="order-dot"></div>
+              <span>Nike Sneakers</span>
+            </div>
+            <div class="order-item">
+              <div class="order-dot"></div>
+              <span>Winter Jacket</span>
+            </div>
+          </div>
+          <a href="#" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="header">
+          <div>
+            <h1 class="page-title">Explore</h1>
+            <div class="filter-tabs">
+              <div class="tab active" data-category="all">All</div>
+              <div class="tab" data-category="men's clothing">Men</div>
+              <div class="tab" data-category="women's clothing">Women</div>
+              <div class="tab" data-category="electronics">Electronics</div>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fas fa-sliders-h"></i>
+            </button>
+            <button class="action-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <button class="cart-btn" id="cartBtn">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartBadge" class="cart-badge">0</span>
+            </button>
+            <div class="user-profile">S</div>
+          </div>
+        </div>
+
+        <div class="content-layout">
+          <div class="main-section">
+            <div class="promo-banner">
+              <div class="promo-content">
+                <h2>Get Up To 50% Off</h2>
+                <p style="margin-bottom: 1rem; opacity: 0.8">
+                  Special discount on selected items
+                </p>
+                <button class="promo-btn">Get Discount</button>
+              </div>
+            </div>
+
+            <div class="secondary-banner">
+              <h3>Winter's Weekend</h3>
+              <p>Keep it casual with our cozy collection</p>
+            </div>
+          </div>
+
+          <div class="sidebar-section" id="featuredProducts">
+            <div class="loading">
+              <div class="spinner"></div>
+              <p>Loading featured products...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading products...</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-overlay" id="checkoutOverlay">
+      <div class="checkout-container">
+        <div class="checkout-header">
+          <h2 class="checkout-title">Shopping Cart</h2>
+          <button class="close-btn" id="closeCheckout">&times;</button>
+        </div>
+        <div class="checkout-content" id="checkoutContent">
+          <div class="empty-cart">
+            <i
+              class="fas fa-shopping-cart"
+              style="font-size: 3rem; color: #e2e8f0; margin-bottom: 1rem"
+            ></i>
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+        <div class="checkout-footer" id="checkoutFooter" style="display: none">
+          <div class="total-amount" id="totalAmount">Total: $0.00</div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
