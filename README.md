@@ -31,20 +31,14 @@ This project simulates a real-world shopping experience, including featured prod
 
 1. **Clone the repository**  
 git clone [Repository](https://github.com/shahbazal0m/frontend-ecommerce-website)
-
 2. Open index.html in your browser
-
 3. Explore the app:
-
 - Browse products
-
 - Add items to cart
-
 - Toggle wishlist
-
 - Open checkout modal to see your cart
 
+---
 ## 🖊️ Author
 
-**Shahbaz Alam**
-[LinkedIn](https://www.linkedin.com/in/iamshahbaz-alam/) | [GitHub](https://github.com/shahbazal0m)
+**Shahbaz Alam** [LinkedIn](https://www.linkedin.com/in/iamshahbaz-alam/) | [GitHub](https://github.com/shahbazal0m)
