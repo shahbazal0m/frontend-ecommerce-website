@@ -13,7 +13,7 @@
   <body>
     <div class="app-container">
       <!-- Sidebar -->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
           <div class="logo">BuyMore</div>
           <div class="stats-card">
@@ -66,16 +66,24 @@
         </div>
       </aside>
 
+      <!-- Mobile Overlay -->
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
       <!-- Main Content -->
       <main class="main-content">
         <div class="header">
-          <div>
-            <h1 class="page-title">Explore</h1>
-            <div class="filter-tabs">
-              <div class="tab active" data-category="all">All</div>
-              <div class="tab" data-category="men's clothing">Men</div>
-              <div class="tab" data-category="women's clothing">Women</div>
-              <div class="tab" data-category="electronics">Electronics</div>
+          <div class="header-left">
+            <button class="hamburger-btn" id="hamburgerBtn">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div>
+              <h1 class="page-title">Explore</h1>
+              <div class="filter-tabs">
+                <div class="tab active" data-category="all">All</div>
+                <div class="tab" data-category="men's clothing">Men</div>
+                <div class="tab" data-category="women's clothing">Women</div>
+                <div class="tab" data-category="electronics">Electronics</div>
+              </div>
             </div>
           </div>
           <div class="header-actions">
@@ -125,6 +133,79 @@
             <p>Loading products...</p>
           </div>
         </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-logo">BuyMore</div>
+              <p class="footer-tagline">Your one-stop shop for everything you love. Quality products, great prices.</p>
+              <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="footer-links-group">
+              <h5>Shop</h5>
+              <ul>
+                <li><a href="#">Popular Products</a></li>
+                <li><a href="#">Men's Clothing</a></li>
+                <li><a href="#">Women's Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Gifts & Living</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-group">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-group">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-newsletter">
+              <h5>Stay Updated</h5>
+              <p>Get exclusive deals delivered to your inbox.</p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input" />
+                <button class="newsletter-btn">Subscribe</button>
+              </div>
+              <div class="footer-payments">
+                <span class="payment-badge"><i class="fab fa-cc-visa"></i></span>
+                <span class="payment-badge"><i class="fab fa-cc-mastercard"></i></span>
+                <span class="payment-badge"><i class="fab fa-cc-paypal"></i></span>
+                <span class="payment-badge"><i class="fab fa-cc-apple-pay"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2025 BuyMore. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
 
@@ -137,10 +218,8 @@
         </div>
         <div class="checkout-content" id="checkoutContent">
           <div class="empty-cart">
-            <i
-              class="fas fa-shopping-cart"
-              style="font-size: 3rem; color: #e2e8f0; margin-bottom: 1rem"
-            ></i>
+            <i class="fas fa-shopping-cart"
+              style="font-size: 3rem; color: #e2e8f0; margin-bottom: 1rem"></i>
             <p>Your cart is empty</p>
           </div>
         </div>
